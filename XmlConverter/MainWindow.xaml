@@ -1,0 +1,18 @@
+﻿<Window x:Class="XmlConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XmlConverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="230" Width="800">
+    <Grid Margin="0,0,0,-3">
+        <Button Content="Convert XML" Click="ConvertXml" HorizontalAlignment="Left" Height="24" Margin="654,134,0,0" VerticalAlignment="Top" Width="99"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="48,29,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="554"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="48,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="554"/>
+        <RadioButton Name="PDF" Content="Xml to PDF" HorizontalAlignment="Left" Margin="654,69,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Name="Word" Content="Xml to Word" HorizontalAlignment="Left" Margin="654,100,0,0" VerticalAlignment="Top"/>
+        <Button Content="Select XML File" HorizontalAlignment="Left" Margin="654,29,0,0" VerticalAlignment="Top" Width="99"/>
+
+    </Grid>
+</Window>
