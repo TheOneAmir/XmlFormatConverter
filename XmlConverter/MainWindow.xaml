@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XmlConverter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="230" Width="800">
+        Title="XML Converter" Height="145" Width="718">
     <Grid Margin="0,0,0,-3">
-        <Button Content="Convert XML" Click="ConvertXml" HorizontalAlignment="Left" Height="24" Margin="654,134,0,0" VerticalAlignment="Top" Width="99"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="48,29,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="554"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="48,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="554"/>
-        <RadioButton Name="PDF" Content="Xml to PDF" HorizontalAlignment="Left" Margin="654,69,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton Name="Word" Content="Xml to Word" HorizontalAlignment="Left" Margin="654,100,0,0" VerticalAlignment="Top"/>
-        <Button Content="Select XML File" HorizontalAlignment="Left" Margin="654,29,0,0" VerticalAlignment="Top" Width="99"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Convert XML" Name="ConvertButton" Click="ConvertXml" HorizontalAlignment="Left" Height="24" Margin="591,50,0,0" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Name="FilePath" Height="24" Margin="20,16,0,0" TextWrapping="Wrap" Text="Path to XML File" VerticalAlignment="Top" Width="554" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Name="Status" Height="24" Margin="20,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="554" Grid.ColumnSpan="2"/>
+        <RadioButton Name="PDF" Content="Xml to PDF" HorizontalAlignment="Left" Margin="20,55,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <RadioButton Name="Word" Content="Xml to Word" HorizontalAlignment="Left" Margin="124,55,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" RenderTransformOrigin="0.068,-0.587"/>
+        <Button Content="Select XML File" Click="SelectFile" HorizontalAlignment="Left" Margin="591,16,0,0" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2" RenderTransformOrigin="0.475,0.05" Height="24"/>
     </Grid>
 </Window>
